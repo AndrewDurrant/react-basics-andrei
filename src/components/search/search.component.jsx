@@ -1,9 +1,11 @@
 import React from 'react'
+import './search.styles.css'
 
-export const Search = props => (
+export const Search = ({ onChange, placeholder }) => (
   <input 
+    className="search"
     type="search" 
-    placeholder="search monsters" 
-    onChange={e => this.setState({ searchField: e.target.value })} 
+    placeholder={placeholder} 
+    onChange={onChange} 
   />
 )
